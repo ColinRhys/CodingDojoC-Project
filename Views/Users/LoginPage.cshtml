@@ -1,0 +1,16 @@
+@model weddingPlanner.Models.UserViewModels
+
+<div class="container">
+    <h1>Login</h1>
+    <form asp-controller="Users" asp-action="Login">
+            <label>Email:</label>
+            <span asp-validation-for="Login.Email"></span>
+            <input class="form-control" asp-for="Login.Email">
+            <br>
+            <label>Password</label>
+            <span asp-validation-for="Login.Password"></span>
+            <input class="form-control" asp-for="Login.Password">
+            <br>
+            <button class="btn btn-info">Login!</button>
+    </form>
+</div>
